@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ксения Максимовна — преподаватель и методист китайского языка для детей</title>
+  <meta name="description" content="Обучение китайскому языку детей от 4 лет, подготовка к YCT и HSK, очные занятия в Пушкино и Щёлково, онлайн-обучение и новый курс по методу Валерии Мещеряковой." />
+  <meta name="theme-color" content="#6c2f3f" />
+  <meta property="og:title" content="Ксения Максимовна — китайский язык для детей" />
+  <meta property="og:description" content="От первых слов через игру и живое общение — до уверенной сдачи YCT и HSK." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --milk:#f7f2e9;
+      --paper:#fffdf9;
+      --wine:#6c2f3f;
+      --wine-dark:#4b1e2b;
+      --jade:#52766a;
+      --jade-soft:#dce8e2;
+      --gold:#b99657;
+      --ink:#252421;
+      --muted:#6d6b66;
+      --line:#e8dfd2;
+      --shadow:0 24px 70px rgba(63,45,41,.10);
+      --radius:28px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:90px}
+    body{margin:0;font-family:Manrope,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--milk);line-height:1.6}
+    img{max-width:100%;display:block}
+    a{color:inherit}
+    button,input,select,textarea{font:inherit}
+    .container{width:min(1180px,calc(100% - 40px));margin:0 auto}
+    .section{padding:94px 0}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--wine);margin-bottom:15px}
+    .eyebrow::before{content:"";width:30px;height:1px;background:var(--gold)}
+    h1,h2,h3,p{margin-top:0}
+    h1{font-size:clamp(42px,6.2vw,78px);line-height:1.02;letter-spacing:-.05em;margin-bottom:26px;max-width:850px}
+    h2{font-size:clamp(34px,4.6vw,58px);line-height:1.08;letter-spacing:-.04em;margin-bottom:20px;max-width:850px}
+    h3{font-size:22px;line-height:1.25;letter-spacing:-.02em;margin-bottom:10px}
+    .lead{font-size:clamp(18px,2vw,22px);line-height:1.55;color:#4b4945;max-width:780px}
+    .small{font-size:14px;color:var(--muted)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;border:0;border-radius:999px;padding:15px 22px;font-weight:800;cursor:pointer;transition:.2s ease;min-height:52px}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:var(--wine);color:#fff;box-shadow:0 12px 30px rgba(108,47,63,.22)}
+    .btn-secondary{background:transparent;color:var(--wine);border:1px solid rgba(108,47,63,.28)}
+    .btn-light{background:#fff;color:var(--wine)}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+
+    header{position:sticky;top:0;z-index:50;background:rgba(247,242,233,.86);backdrop-filter:blur(14px);border-bottom:1px solid rgba(232,223,210,.85)}
+    .nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{text-decoration:none;display:flex;align-items:center;gap:12px;font-weight:800;white-space:nowrap}
+    .brand-mark{width:40px;height:40px;border-radius:14px;background:var(--wine);color:#fff;display:grid;place-items:center;font-family:"Noto Serif SC",serif;font-size:21px}
+    .menu{display:flex;gap:22px;align-items:center}
+    .menu a{text-decoration:none;color:#55514d;font-size:14px;font-weight:700}
+    .menu a:hover{color:var(--wine)}
+    .mobile-toggle{display:none;background:transparent;border:0;font-size:27px}
+
+    .hero{padding:76px 0 96px;overflow:hidden;position:relative}
+    .hero::after{content:"中文";position:absolute;right:-32px;top:42px;font-family:"Noto Serif SC",serif;font-size:250px;color:rgba(108,47,63,.035);line-height:1;pointer-events:none}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
+    .hero-copy{position:relative;z-index:1}
+    .hero-sub{font-size:19px;color:#4f4c47;max-width:720px}
+    .hero-note{display:flex;gap:12px;align-items:flex-start;margin-top:24px;padding:16px 18px;border-left:2px solid var(--gold);max-width:650px;color:#5d5852}
+    .portrait-wrap{position:relative;min-height:620px}
+    .portrait{position:absolute;inset:0 0 0 50px;border-radius:190px 190px 30px 30px;overflow:hidden;background:linear-gradient(160deg,#e8ded0,#d6e0db);box-shadow:var(--shadow)}
+    .portrait img{width:100%;height:100%;object-fit:cover}
+    .portrait-badge{position:absolute;left:0;bottom:44px;background:var(--paper);border:1px solid var(--line);padding:17px 20px;border-radius:18px;box-shadow:var(--shadow);max-width:245px}
+    .portrait-badge strong{display:block;color:var(--wine);font-size:24px;line-height:1.15}
+    .seal{position:absolute;right:-18px;top:28px;width:92px;height:92px;border-radius:50%;background:var(--wine);color:#fff;display:grid;place-items:center;text-align:center;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;transform:rotate(8deg);box-shadow:0 14px 34px rgba(108,47,63,.24)}
+
+    .facts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:38px}
+    .fact{padding:18px;border:1px solid var(--line);background:rgba(255,255,255,.54);border-radius:18px}
+    .fact strong{display:block;font-size:21px;color:var(--wine)}
+    .fact span{font-size:13px;color:var(--muted)}
+
+    .about-grid,.project-grid,.china-grid,.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:58px;align-items:start}
+    .card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:0 10px 35px rgba(63,45,41,.05)}
+    .quote{background:var(--wine);color:#fff;border-radius:var(--radius);padding:36px;min-height:100%;display:flex;flex-direction:column;justify-content:flex-end}
+    .quote .hanzi{font-family:"Noto Serif SC",serif;font-size:92px;opacity:.18;line-height:1;margin-bottom:auto}
+    .quote p{font-size:25px;line-height:1.4;letter-spacing:-.025em;margin-bottom:0}
+
+    .system{background:var(--paper);border-block:1px solid var(--line)}
+    .grid-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:38px}
+    .system-card{border:1px solid var(--line);border-radius:22px;padding:24px;background:#fff}
+    .system-card .num{font-size:12px;color:var(--gold);font-weight:800;letter-spacing:.13em;margin-bottom:25px}
+    .system-card p{font-size:14px;color:var(--muted);margin-bottom:0}
+
+    .project{background:linear-gradient(135deg,var(--wine-dark),var(--wine));color:#fff;position:relative;overflow:hidden}
+    .project::after{content:"语";position:absolute;right:-20px;bottom:-60px;font-family:"Noto Serif SC",serif;font-size:360px;color:rgba(255,255,255,.045)}
+    .project .eyebrow{color:#f0d9c5}.project .eyebrow::before{background:#f0d9c5}
+    .project h2{color:#fff}.project p{color:#f6ece8}
+    .project-list{display:grid;gap:12px;margin:26px 0 0}
+    .project-item{display:flex;gap:13px;align-items:flex-start;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+    .project-item span:first-child{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.11);font-size:12px;flex:0 0 auto}
+    .waitlist{background:#fff;color:var(--ink);border-radius:28px;padding:30px;position:relative;z-index:1}
+    .waitlist h3{font-size:27px}
+    .waitlist p{color:var(--muted)}
+
+    .principles{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:38px}
+    .principle{padding:24px 20px;border-radius:22px;border:1px solid var(--line);background:var(--paper)}
+    .principle-icon{width:44px;height:44px;border-radius:15px;background:var(--jade-soft);display:grid;place-items:center;margin-bottom:22px;font-weight:800;color:var(--jade)}
+    .principle p{font-size:14px;color:var(--muted);margin-bottom:0}
+
+    .results{background:var(--jade);color:#fff}
+    .results .eyebrow{color:#e6f0eb}.results .eyebrow::before{background:#e6f0eb}
+    .results h2,.results p{color:#fff}
+    .score-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:stretch;margin-top:36px}
+    .score-big{border:1px solid rgba(255,255,255,.24);border-radius:28px;padding:38px;display:flex;flex-direction:column;justify-content:space-between;min-height:320px;background:rgba(255,255,255,.06)}
+    .score-big strong{font-size:clamp(78px,11vw,150px);line-height:.9;letter-spacing:-.07em}
+    .score-big span{font-size:18px}
+    .exam-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .exam{background:#fff;color:var(--ink);border-radius:20px;padding:22px}
+    .exam strong{display:block;font-size:24px;color:var(--jade)}
+    .exam span{font-size:13px;color:var(--muted)}
+
+    .china-photo{min-height:560px;border-radius:34px;overflow:hidden;background:linear-gradient(145deg,#dfd1bd,#c9d7d1);position:relative}
+    .china-photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+    .china-caption{position:absolute;left:20px;right:20px;bottom:20px;background:rgba(255,253,249,.92);backdrop-filter:blur(8px);padding:16px 18px;border-radius:16px;font-size:14px}
+    .china-copy{padding-top:28px}
+    .china-copy blockquote{margin:28px 0 0;padding-left:18px;border-left:2px solid var(--gold);font-size:20px;color:#514d48}
+
+    .formats{background:var(--paper);border-block:1px solid var(--line)}
+    .format-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:38px}
+    .format{display:flex;flex-direction:column;min-height:300px;padding:26px;border-radius:24px;border:1px solid var(--line);background:#fff}
+    .format .tag{align-self:flex-start;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--jade);background:var(--jade-soft);padding:7px 10px;border-radius:999px;margin-bottom:25px}
+    .format p{font-size:14px;color:var(--muted)}
+    .format .btn{margin-top:auto;align-self:flex-start;padding-inline:18px}
+
+    .testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:38px}
+    .review{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:25px}
+    .review p{font-size:15px}
+    .review-author{display:flex;align-items:center;gap:12px;margin-top:20px;font-size:13px;color:var(--muted)}
+    .avatar{width:42px;height:42px;border-radius:50%;background:var(--jade-soft);display:grid;place-items:center;color:var(--jade);font-weight:800}
+
+    .contact{padding-bottom:50px}
+    .contact-card{background:var(--wine);color:#fff;border-radius:34px;padding:38px}
+    .contact-card h2,.contact-card p{color:#fff}
+    .contact-links{display:grid;gap:10px;margin-top:24px}
+    .contact-links a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.22);padding:11px 0}
+    form{display:grid;gap:13px}
+    label{font-size:13px;font-weight:700;color:#5c5852}
+    input,select,textarea{width:100%;border:1px solid #ddd3c7;border-radius:14px;background:#fff;padding:13px 14px;color:var(--ink);outline:none}
+    input:focus,select:focus,textarea:focus{border-color:var(--jade);box-shadow:0 0 0 3px rgba(82,118,106,.11)}
+    textarea{min-height:110px;resize:vertical}
+    .checkbox{display:flex;gap:10px;align-items:flex-start;font-size:12px;color:var(--muted)}
+    .checkbox input{width:auto;margin-top:3px}
+    .form-message{display:none;padding:12px 14px;border-radius:12px;background:var(--jade-soft);color:#34594d;font-size:13px}
+
+    footer{padding:26px 0 36px;border-top:1px solid var(--line)}
+    .footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:13px;color:var(--muted)}
+    .footer-row a{text-decoration:none;color:var(--muted)}
+
+    @media (max-width:1050px){
+      .menu{display:none}.mobile-toggle{display:block}
+      .menu.open{display:flex;position:absolute;left:20px;right:20px;top:70px;flex-direction:column;align-items:flex-start;padding:20px;background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
+      .hero-grid,.about-grid,.project-grid,.china-grid,.contact-grid,.score-grid{grid-template-columns:1fr}
+      .portrait-wrap{min-height:580px;max-width:620px;width:100%;margin:0 auto}
+      .facts{grid-template-columns:repeat(2,1fr)}
+      .grid-cards{grid-template-columns:repeat(2,1fr)}
+      .principles{grid-template-columns:repeat(2,1fr)}
+      .format-grid{grid-template-columns:repeat(2,1fr)}
+      .testimonials{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width:650px){
+      .container{width:min(100% - 28px,1180px)}
+      .section{padding:70px 0}
+      .hero{padding:52px 0 70px}
+      h1{font-size:44px}
+      h2{font-size:36px}
+      .hero-sub{font-size:17px}
+      .actions{display:grid}.btn{width:100%}
+      .portrait-wrap{min-height:440px;margin-top:16px}
+      .portrait{left:22px;border-radius:120px 120px 24px 24px}
+      .portrait-badge{left:0;bottom:25px;max-width:210px;padding:14px 16px}
+      .portrait-badge strong{font-size:20px}
+      .seal{width:74px;height:74px;right:-5px;font-size:9px}
+      .facts,.grid-cards,.principles,.format-grid,.testimonials,.exam-list{grid-template-columns:1fr}
+      .fact{padding:16px}
+      .quote{min-height:360px}.quote p{font-size:22px}
+      .project .waitlist{padding:23px}
+      .score-big{min-height:260px;padding:28px}
+      .china-photo{min-height:400px}
+      .contact-card{padding:27px 22px}
+      .footer-row{flex-direction:column;align-items:flex-start}
+    }
+    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#top" aria-label="На главную">
+      <span class="brand-mark">学</span>
+      <span>Ксения Максимовна</span>
+    </a>
+    <nav class="menu" id="menu" aria-label="Основное меню">
+      <a href="#about">Обо мне</a><a href="#course">Новый курс</a><a href="#method">Мой подход</a><a href="#results">Результаты</a><a href="#china">Китай</a><a href="#learning">Обучение</a><a href="#contact">Контакты</a>
+    </nav>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Открыть меню">☰</button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow">Китайский язык для детей от 4 лет</div>
+        <h1>Китайский язык, на котором дети начинают говорить</h1>
+        <p class="hero-sub">Я Ксения Максимовна — преподаватель и методист китайского языка с опытом более 10 лет. Создаю понятную детям систему, в которой язык осваивается через живую речь, игру и реальные ситуации.</p>
+        <div class="hero-note">Вместе с Валерией Мещеряковой работаю над новым детским курсом и адаптирую метод естественного освоения языка для китайского.</div>
+        <div class="actions">
+          <a class="btn btn-primary" href="#course">Следить за созданием курса →</a>
+          <a class="btn btn-secondary" href="#learning">Выбрать обучение для ребёнка</a>
+        </div>
+        <div class="facts" aria-label="Ключевые факты">
+          <div class="fact"><strong>10+ лет</strong><span>преподавания китайского</span></div>
+          <div class="fact"><strong>с 4 лет</strong><span>обучение детей</span></div>
+          <div class="fact"><strong>2 диплома</strong><span>с отличием МГЛУ</span></div>
+          <div class="fact"><strong>200 / 200</strong><span>максимальный результат учеников</span></div>
+        </div>
+      </div>
+      <div class="portrait-wrap" aria-label="Фотография Ксении Максимовны">
+        <div class="portrait"><img src="assets/hero-placeholder.svg" alt="Замените на профессиональную фотографию Ксении Максимовны"></div>
+        <div class="portrait-badge"><strong>Речь → система → результат</strong><span class="small">от первых фраз до YCT и HSK</span></div>
+        <div class="seal">методист<br>китайского<br>языка</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div>
+        <div class="eyebrow">Обо мне</div>
+        <h2>Преподаватель, методист и человек, который однажды выбрал самый интересный вызов</h2>
+        <p class="lead">Когда я выбирала китайский язык, мне было интересно, смогу ли я добиться результата в языке, который считается одним из самых сложных.</p>
+        <p>Сегодня я более 10 лет преподаю китайский детям, создаю образовательные программы и помогаю ученикам не бояться говорить, понимать живую речь, сохранять интерес к языку и добиваться высоких результатов на экзаменах.</p>
+        <p>Я получила два высших образования с отличием в Московском государственном лингвистическом университете имени Мориса Тореза: педагогическое и лингвистическое.</p>
+        <p>Я призёр муниципального конкурса «Педагогический дебют — Учитель года 2022» и методист китайского направления ABC Club.</p>
+      </div>
+      <aside class="quote">
+        <div class="hanzi">安心</div>
+        <p>«Хороший урок — это пространство, в котором ребёнок может пробовать, ошибаться, говорить и постепенно чувствовать: у меня получается».</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section system" id="system">
+    <div class="container">
+      <div class="eyebrow">Что я создала</div>
+      <h2>Не отдельные уроки, а целостную систему обучения</h2>
+      <p class="lead">В ABC Club я разработала непрерывную систему обучения китайскому языку для детей разных возрастов — от первого знакомства с языком до подготовки к международным экзаменам.</p>
+      <div class="grid-cards">
+        <article class="system-card"><div class="num">01</div><h3>Курсы по возрастам</h3><p>Последовательная линейка уровней и единый маршрут роста ребёнка.</p></article>
+        <article class="system-card"><div class="num">02</div><h3>Планирование</h3><p>Календарно-тематическая программа, в которой каждый этап связан со следующим.</p></article>
+        <article class="system-card"><div class="num">03</div><h3>YCT и HSK</h3><p>Системная подготовка к международным экзаменам без потери интереса к живому языку.</p></article>
+        <article class="system-card"><div class="num">04</div><h3>Материалы</h3><p>Учебные материалы для детей и методические материалы для преподавателей.</p></article>
+        <article class="system-card"><div class="num">05</div><h3>Языковые лагеря</h3><p>Программы, в которых китайский становится частью насыщенного детского опыта.</p></article>
+        <article class="system-card"><div class="num">06</div><h3>Культура</h3><p>Современный Китай через события, поездки, творчество и реальные контексты.</p></article>
+        <article class="system-card"><div class="num">07</div><h3>Игровые механики</h3><p>Игры работают на образовательную цель и закрепляют речевые навыки.</p></article>
+        <article class="system-card"><div class="num">08</div><h3>Для преподавателей</h3><p>Инструменты, которые помогают сохранять качество обучения на разных уровнях.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section project" id="course">
+    <div class="container project-grid">
+      <div>
+        <div class="eyebrow">Новый проект</div>
+        <h2>Создаём новый курс китайского языка для детей</h2>
+        <p class="lead">На рынке пока нет полноценного детского курса китайского языка, построенного на методе естественного освоения речи. Я увидела эту свободную нишу и предложила Валерии Мещеряковой создать такой курс вместе.</p>
+        <p>Сейчас мы адаптируем принципы её методики для особенностей китайского языка: тонов, фонетики, иероглифики и другой языковой логики.</p>
+        <div class="project-list">
+          <div class="project-item"><span>1</span><span>Формируем концепцию курса</span></div>
+          <div class="project-item"><span>2</span><span>Разрабатываем программу и учебные материалы</span></div>
+          <div class="project-item"><span>3</span><span>Апробируем решения с детьми</span></div>
+          <div class="project-item"><span>4</span><span>Строим путь от понимания речи к самостоятельному говорению</span></div>
+        </div>
+      </div>
+      <div class="waitlist">
+        <div class="eyebrow">Лист ожидания</div>
+        <h3>Получать важные новости о курсе</h3>
+        <p>Оставьте контакт — сообщим о важных этапах и начале набора.</p>
+        <form class="js-demo-form" data-form="waitlist">
+          <div><label for="w-name">Имя</label><input id="w-name" name="name" required autocomplete="name"></div>
+          <div><label for="w-role">Кто вы?</label><select id="w-role" name="role" required><option value="">Выберите</option><option>Родитель</option><option>Преподаватель</option><option>Руководитель школы</option><option>Методист</option><option>Другое</option></select></div>
+          <div><label for="w-contact">Telegram</label><input id="w-contact" name="contact" placeholder="@username" required></div>
+          <label class="checkbox"><input type="checkbox" required><span>Согласен(а) на обработку персональных данных и ознакомлен(а) с <a href="privacy.html">политикой конфиденциальности</a>.</span></label>
+          <button class="btn btn-primary" type="submit">Следить за развитием курса</button>
+          <div class="form-message">Спасибо! Я сообщу вам о важных новостях и начале набора.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="method">
+    <div class="container">
+      <div class="eyebrow">Как проходит обучение</div>
+      <h2>Сначала понимание и речь — затем уверенный академический результат</h2>
+      <div class="principles">
+        <article class="principle"><div class="principle-icon">01</div><h3>Не бояться говорить</h3><p>Безопасная среда, где можно пробовать, ошибаться и становиться увереннее.</p></article>
+        <article class="principle"><div class="principle-icon">02</div><h3>Язык через ситуации</h3><p>Игры, истории, диалоги и понятные ребёнку жизненные контексты.</p></article>
+        <article class="principle"><div class="principle-icon">03</div><h3>Интерес надолго</h3><p>Материалы соответствуют возрасту и не превращают язык в зубрёжку списков.</p></article>
+        <article class="principle"><div class="principle-icon">04</div><h3>Единая система</h3><p>Каждый возраст и уровень становится частью одного образовательного маршрута.</p></article>
+        <article class="principle"><div class="principle-icon">05</div><h3>Измеримый результат</h3><p>Подготовка к YCT и HSK и результаты учеников вплоть до 200 из 200 баллов.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section results" id="results">
+    <div class="container">
+      <div class="eyebrow">Результаты учеников</div>
+      <h2>От первых фраз до 200 из 200</h2>
+      <p class="lead">Ученики успешно сдают международные экзамены по китайскому языку — от первых уровней YCT до HSK.</p>
+      <div class="score-grid">
+        <div class="score-big"><span>Максимальный результат учеников</span><strong>200/200</strong><span>Здесь позже можно разместить фото сертификата или обезличенный результат.</span></div>
+        <div class="exam-list">
+          <div class="exam"><strong>YCT 1</strong><span>первые академические результаты</span></div>
+          <div class="exam"><strong>YCT 2</strong><span>движение по системе уровней</span></div>
+          <div class="exam"><strong>HSK 1</strong><span>международный экзамен</span></div>
+          <div class="exam"><strong>HSK 2</strong><span>следующий уровень владения языком</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="china">
+    <div class="container china-grid">
+      <div class="china-photo"><img src="assets/china-placeholder.svg" alt="Замените на фотографию из образовательной поездки в Китай"><div class="china-caption">Образовательная поездка в Китай · июнь 2026 года</div></div>
+      <div class="china-copy">
+        <div class="eyebrow">Китай</div>
+        <h2>Не только изучаем Китай — едем в Китай</h2>
+        <p class="lead">В июне 2026 года я собрала и подготовила группу учеников к образовательной поездке в Китай, а затем сопровождала детей во время путешествия.</p>
+        <p>Для учеников это стало возможностью услышать живую китайскую речь, применить свои знания в реальных ситуациях и увидеть, какие возможности открывает язык.</p>
+        <blockquote>Китайский не должен оставаться предметом из учебника. Он становится языком общения, путешествий, новых знакомств и будущего.</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="section formats" id="learning">
+    <div class="container">
+      <div class="eyebrow">Форматы обучения</div>
+      <h2>Выберите подходящий формат</h2>
+      <div class="format-grid">
+        <article class="format"><span class="tag">Очно</span><h3>Группы в ABC Club</h3><p>Обучение детей от 4 лет в Пушкино и Щёлково.</p><a class="btn btn-secondary" href="#contact">Узнать о группах</a></article>
+        <article class="format"><span class="tag">Персонально</span><h3>Индивидуальные занятия</h3><p>Программа с учётом возраста, уровня и целей ребёнка.</p><a class="btn btn-secondary" href="#contact">Написать Ксении</a></article>
+        <article class="format"><span class="tag">Онлайн</span><h3>Онлайн-занятия</h3><p>Китайский язык из любого города — в удобном дистанционном формате.</p><a class="btn btn-secondary" href="#contact">Узнать подробнее</a></article>
+        <article class="format"><span class="tag">Скоро</span><h3>Новый курс</h3><p>Лист ожидания курса, создаваемого совместно с Валерией Мещеряковой.</p><a class="btn btn-primary" href="#course">Вступить в лист ожидания</a></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reviews">
+    <div class="container">
+      <div class="eyebrow">Отзывы</div>
+      <h2>Что отмечают родители</h2>
+      <p class="lead">Ниже стоят аккуратные заглушки. Их лучше заменить на 3–5 реальных содержательных отзывов, а не десятки скриншотов.</p>
+      <div class="testimonials">
+        <article class="review"><p>«Здесь будет отзыв о том, как ребёнок начал говорить и перестал бояться использовать китайский в речи».</p><div class="review-author"><div class="avatar">Р</div><span>Имя родителя · возраст ребёнка</span></div></article>
+        <article class="review"><p>«Здесь будет отзыв про интерес к занятиям, уверенность и успешную подготовку к экзамену».</p><div class="review-author"><div class="avatar">Р</div><span>Имя родителя · YCT / HSK</span></div></article>
+        <article class="review"><p>«Здесь можно разместить историю ученика, который занимается несколько лет и ездил в Китай».</p><div class="review-author"><div class="avatar">Р</div><span>Имя родителя · история ученика</span></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-card">
+        <div class="eyebrow" style="color:#f0d9c5">Контакты</div>
+        <h2>Давайте знакомиться</h2>
+        <p>Если вы хотите подобрать обучение для ребёнка, узнать о новом курсе или обсудить профессиональное сотрудничество, напишите мне или оставьте заявку.</p>
+        <div class="contact-links">
+          <a href="#" data-placeholder-link>Telegram Ксении Максимовны →</a>
+          <span>Пушкино · Щёлково · онлайн</span>
+        </div>
+      </div>
+      <div class="card">
+        <form class="js-demo-form" data-form="contact">
+          <div><label for="c-name">Имя</label><input id="c-name" name="name" required autocomplete="name"></div>
+          <div><label for="c-role">Кто вы?</label><select id="c-role" name="role" required><option value="">Выберите</option><option>Родитель</option><option>Преподаватель</option><option>Партнёр</option><option>Другое</option></select></div>
+          <div><label for="c-age">Возраст ребёнка</label><input id="c-age" name="age" placeholder="Если обращаетесь как родитель"></div>
+          <div><label for="c-format">Интересующий формат</label><select id="c-format" name="format"><option>Группа в ABC Club</option><option>Индивидуальные занятия</option><option>Онлайн-занятия</option><option>Новый курс</option><option>Сотрудничество</option></select></div>
+          <div><label for="c-contact">Telegram или телефон</label><input id="c-contact" name="contact" required placeholder="@username или +7..."></div>
+          <div><label for="c-comment">Комментарий</label><textarea id="c-comment" name="comment" placeholder="Коротко расскажите, чем могу помочь"></textarea></div>
+          <label class="checkbox"><input type="checkbox" required><span>Согласен(а) на обработку персональных данных и ознакомлен(а) с <a href="privacy.html">политикой конфиденциальности</a>.</span></label>
+          <button class="btn btn-primary" type="submit">Отправить заявку</button>
+          <div class="form-message">Спасибо! Заявка принята. После подключения сервиса форм это сообщение будет сопровождаться реальной отправкой данных.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row"><span>© 2026 Ксения Максимовна · преподаватель и методист китайского языка</span><a href="privacy.html">Политика конфиденциальности</a></div>
+</footer>
+
+<script>
+  const toggle=document.getElementById('mobileToggle');
+  const menu=document.getElementById('menu');
+  toggle.addEventListener('click',()=>menu.classList.toggle('open'));
+  menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+  document.querySelectorAll('[data-placeholder-link]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();alert('Добавьте ссылку на Telegram Ксении Максимовны.');}));
+  document.querySelectorAll('.js-demo-form').forEach(form=>form.addEventListener('submit',e=>{
+    e.preventDefault();
+    form.querySelector('.form-message').style.display='block';
+    form.reset();
+  }));
+</script>
+</body>
+</html>

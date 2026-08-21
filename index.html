@@ -115,6 +115,27 @@
     .quote .hanzi{font-family:"Noto Serif SC",serif;font-size:92px;color:var(--red);opacity:.14;line-height:1;margin-bottom:auto}
     .quote p{font-family:var(--script);font-size:30px;line-height:1.25;margin-bottom:0;position:relative;z-index:1}
 
+
+    .about-visual{display:grid;gap:14px;align-self:stretch;position:relative;z-index:1}
+    .about-photo{min-height:390px;border:1px solid var(--line);overflow:hidden;background:#f2e9dd;position:relative}
+    .about-photo img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover}
+    .about-visual .quote{min-height:auto}
+
+    .project-photo{margin-top:24px;height:250px;border:1px solid var(--line);overflow:hidden;position:relative;background:#f5eee5}
+    .project-photo img{width:100%;height:100%;object-fit:cover}
+    .project-photo span{position:absolute;left:12px;bottom:12px;background:rgba(255,253,248,.92);border:1px solid rgba(181,31,42,.2);padding:7px 10px;font-family:var(--serif);font-size:12px;color:var(--muted)}
+
+    .certificate-gallery{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:0}
+    .certificate-gallery figure{margin:0;border:1px solid var(--line);background:#fff;padding:10px}
+    .certificate-gallery img{width:100%;height:230px;object-fit:contain;background:#f9f5ef}
+    .certificate-gallery figcaption{font-family:var(--serif);font-size:12px;color:var(--muted);padding:8px 4px 2px;text-align:center}
+
+    .china-media{display:grid;gap:10px}
+    .china-thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    .china-thumbs img{width:100%;height:120px;object-fit:cover;border:1px solid var(--line);background:#f2e9dd}
+
+    .review-image{width:100%;height:190px;object-fit:cover;border:1px solid rgba(181,31,42,.18);margin-bottom:18px;background:#f5eee5}
+
     .system{background:linear-gradient(180deg,#fffdf8,#fbf6ed 50%,#fffdf8);overflow:hidden}
     .system::after{content:"";position:absolute;left:-60px;bottom:-100px;width:430px;height:210px;background:url("assets/ink-mountains.svg") left bottom/contain no-repeat;opacity:.5}
     .grid-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:34px;position:relative;z-index:1}
@@ -213,6 +234,7 @@
       .principle:last-child{grid-column:1/-1}
       .format-grid{grid-template-columns:repeat(2,1fr)}
       .testimonials{grid-template-columns:1fr 1fr}
+      .certificate-gallery{grid-template-columns:1fr 1fr}
       .hero::before{left:-150px;opacity:.72}
     }
     @media (max-width:650px){
@@ -236,6 +258,11 @@
       .fact{border-right:0!important;border-bottom:1px solid rgba(181,31,42,.16)!important;min-height:auto;padding:15px 18px}
       .fact:last-child{border-bottom:0!important}
       .about-grid,.project-grid,.china-grid,.contact-grid,.score-grid{padding:20px;gap:26px}
+      .certificate-gallery{grid-template-columns:1fr}
+      .china-thumbs img{height:92px}
+      .about-photo{min-height:330px}
+      .project-photo{height:210px}
+      .review-image{height:160px}
       .grid-cards,.principles,.format-grid,.testimonials,.exam-list{grid-template-columns:1fr}
       .principle:last-child{grid-column:auto}
       .quote{min-height:330px;padding:26px}.quote p{font-size:26px}
@@ -248,8 +275,13 @@
       .footer-row{flex-direction:column;align-items:flex-start;padding-top:10px}
     }
     @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.system-card{transition:none}}
-  </style>
-</head>
+  
+    .hp-field{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}
+    .form-message.is-error{display:block;border-color:#d8a9a4;background:#fff2ef;color:#8d1720}
+    .form-message.is-success{display:block;border-color:#b8c9b5;background:#f4f8f2;color:#315139}
+    .btn[disabled]{opacity:.65;cursor:wait;transform:none!important;box-shadow:none!important}
+</style>
+<script src="assets/site-config.js"></script></head>
 <body>
 <header>
 <div class="container nav">
@@ -275,10 +307,9 @@
 <a class="btn btn-primary" href="#course">Следить за созданием курса →</a>
 <a class="btn btn-secondary" href="#learning">Выбрать обучение для ребёнка</a>
 </div>
-
 </div>
 <div aria-label="Фотография Ксении Максимовны" class="portrait-wrap">
-<div class="portrait"><img alt="Замените на профессиональную фотографию Ксении Максимовны" src="assets/hero-placeholder.svg"/></div>
+<div class="portrait"><img alt="Ксения Максимовна — преподаватель китайского языка" src="assets/hero.jpg"/></div>
 <div class="portrait-badge"><strong>Речь → система → результат</strong><span class="small">от первых фраз до YCT и HSK</span></div>
 <div class="seal">методист<br/>китайского<br/>языка</div>
 </div>
@@ -299,9 +330,12 @@
 <p>Я получила два высших образования с отличием в Московском государственном лингвистическом университете имени Мориса Тореза: педагогическое и лингвистическое.</p>
 <p>Я призёр муниципального конкурса «Педагогический дебют — Учитель года 2022» и методист китайского направления ABC Club.</p>
 </div>
-<aside class="quote">
+<aside class="about-visual">
+<div class="about-photo"><img alt="Ксения Максимовна" src="assets/kseniya-about.jpg"/></div>
+<div class="quote">
 <div class="hanzi">安心</div>
 <p>«Хороший урок — это пространство, в котором ребёнок может пробовать, ошибаться, говорить и постепенно чувствовать: у меня получается».</p>
+</div>
 </aside>
 </div>
 </section>
@@ -335,18 +369,19 @@
 <div class="project-item"><span>3</span><span>Апробируем решения с детьми</span></div>
 <div class="project-item"><span>4</span><span>Строим путь от понимания речи к самостоятельному говорению</span></div>
 </div>
+<div class="project-photo"><img alt="Работа над новым курсом китайского языка" src="assets/project.jpg"/></div>
 </div>
 <div class="waitlist">
 <div class="eyebrow">Лист ожидания</div>
 <h3>Получать важные новости о курсе</h3>
 <p>Оставьте контакт — сообщим о важных этапах и начале набора.</p>
-<form class="js-demo-form" data-form="waitlist">
+<form class="js-live-form" data-form="waitlist" novalidate=""><input aria-hidden="true" autocomplete="off" class="hp-field" name="_honey" tabindex="-1" type="text"/>
 <div><label for="w-name">Имя</label><input autocomplete="name" id="w-name" name="name" required=""/></div>
 <div><label for="w-role">Кто вы?</label><select id="w-role" name="role" required=""><option value="">Выберите</option><option>Родитель</option><option>Преподаватель</option><option>Руководитель школы</option><option>Методист</option><option>Другое</option></select></div>
-<div><label for="w-contact">Telegram</label><input id="w-contact" name="contact" placeholder="@username" required=""/></div>
+<div><label for="w-contact">Telegram, телефон или e-mail</label><input autocomplete="email" id="w-contact" name="contact" placeholder="Как с вами связаться" required=""/></div>
 <label class="checkbox"><input required="" type="checkbox"/><span>Согласен(а) на обработку персональных данных и ознакомлен(а) с <a href="privacy.html">политикой конфиденциальности</a>.</span></label>
 <button class="btn btn-primary" type="submit">Следить за развитием курса</button>
-<div class="form-message">Спасибо! Я сообщу вам о важных новостях и начале набора.</div>
+<div class="form-message" role="status">Спасибо! Заявка отправлена. Я сообщу вам о важных новостях и начале набора.</div>
 </form>
 </div>
 </div>
@@ -370,19 +405,30 @@
 <h2>От первых фраз до 200 из 200</h2>
 <p class="lead">Ученики успешно сдают международные экзамены по китайскому языку — от первых уровней YCT до HSK.</p>
 <div class="score-grid">
-<div class="score-big"><span>Максимальный результат учеников</span><strong>200/200</strong><span>Здесь позже можно разместить фото сертификата или обезличенный результат.</span></div>
+<div class="score-big"><span>Максимальный результат учеников</span><strong>200/200</strong><span>Максимальный результат учеников на экзамене.</span></div>
 <div class="exam-list">
 <div class="exam"><strong>YCT 1</strong><span>первые академические результаты</span></div>
 <div class="exam"><strong>YCT 2</strong><span>движение по системе уровней</span></div>
 <div class="exam"><strong>HSK 1</strong><span>международный экзамен</span></div>
 <div class="exam"><strong>HSK 2</strong><span>следующий уровень владения языком</span></div>
 </div>
+<div class="certificate-gallery">
+<figure><img alt="Результат или сертификат ученика 1" src="assets/certificate-1.jpg"/><figcaption>Результаты учеников · YCT / HSK</figcaption></figure>
+<figure><img alt="Результат или сертификат ученика 2" src="assets/certificate-2.jpg"/><figcaption>Результаты учеников · YCT / HSK</figcaption></figure>
+</div>
 </div>
 </div>
 </section>
 <section class="section" id="china">
 <div class="container china-grid">
-<div class="china-photo"><img alt="Замените на фотографию из образовательной поездки в Китай" src="assets/china-placeholder.svg"/><div class="china-caption">Образовательная поездка в Китай · июнь 2026 года</div></div>
+<div class="china-media">
+<div class="china-photo"><img alt="Образовательная поездка в Китай" src="assets/china-1.jpg"/><div class="china-caption">Образовательная поездка в Китай · июнь 2026 года</div></div>
+<div class="china-thumbs">
+<img alt="Поездка в Китай — фото 2" src="assets/china-2.jpg"/>
+<img alt="Поездка в Китай — фото 3" src="assets/china-3.jpg"/>
+<img alt="Поездка в Китай — фото 4" src="assets/china-4.jpg"/>
+</div>
+</div>
 <div class="china-copy">
 <div class="eyebrow">Китай</div>
 <h2>Не только изучаем Китай — едем в Китай</h2>
@@ -404,18 +450,7 @@
 </div>
 </div>
 </section>
-<section class="section" id="reviews">
-<div class="container">
-<div class="eyebrow">Отзывы</div>
-<h2>Что отмечают родители</h2>
-<p class="lead">Ниже стоят аккуратные заглушки. Их лучше заменить на 3–5 реальных содержательных отзывов, а не десятки скриншотов.</p>
-<div class="testimonials">
-<article class="review"><p>«Здесь будет отзыв о том, как ребёнок начал говорить и перестал бояться использовать китайский в речи».</p><div class="review-author"><div class="avatar">Р</div><span>Имя родителя · возраст ребёнка</span></div></article>
-<article class="review"><p>«Здесь будет отзыв про интерес к занятиям, уверенность и успешную подготовку к экзамену».</p><div class="review-author"><div class="avatar">Р</div><span>Имя родителя · YCT / HSK</span></div></article>
-<article class="review"><p>«Здесь можно разместить историю ученика, который занимается несколько лет и ездил в Китай».</p><div class="review-author"><div class="avatar">Р</div><span>Имя родителя · история ученика</span></div></article>
-</div>
-</div>
-</section>
+
 <section class="section contact" id="contact">
 <div class="container contact-grid">
 <div class="contact-card">
@@ -423,12 +458,12 @@
 <h2>Давайте знакомиться</h2>
 <p>Если вы хотите подобрать обучение для ребёнка, узнать о новом курсе или обсудить профессиональное сотрудничество, напишите мне или оставьте заявку.</p>
 <div class="contact-links">
-<a data-placeholder-link="" href="#">Telegram Ксении Максимовны →</a>
+<a hidden="" href="#" id="telegramLink">Написать в Telegram →</a>
 <span>Пушкино · Щёлково · онлайн</span>
 </div>
 </div>
 <div class="card">
-<form class="js-demo-form" data-form="contact">
+<form class="js-live-form" data-form="contact" novalidate=""><input aria-hidden="true" autocomplete="off" class="hp-field" name="_honey" tabindex="-1" type="text"/>
 <div><label for="c-name">Имя</label><input autocomplete="name" id="c-name" name="name" required=""/></div>
 <div><label for="c-role">Кто вы?</label><select id="c-role" name="role" required=""><option value="">Выберите</option><option>Родитель</option><option>Преподаватель</option><option>Партнёр</option><option>Другое</option></select></div>
 <div><label for="c-age">Возраст ребёнка</label><input id="c-age" name="age" placeholder="Если обращаетесь как родитель"/></div>
@@ -437,7 +472,7 @@
 <div><label for="c-comment">Комментарий</label><textarea id="c-comment" name="comment" placeholder="Коротко расскажите, чем могу помочь"></textarea></div>
 <label class="checkbox"><input required="" type="checkbox"/><span>Согласен(а) на обработку персональных данных и ознакомлен(а) с <a href="privacy.html">политикой конфиденциальности</a>.</span></label>
 <button class="btn btn-primary" type="submit">Отправить заявку</button>
-<div class="form-message">Спасибо! Заявка принята. После подключения сервиса форм это сообщение будет сопровождаться реальной отправкой данных.</div>
+<div class="form-message" role="status">Спасибо! Заявка отправлена. Я свяжусь с вами по указанному контакту.</div>
 </form>
 </div>
 </div>
@@ -451,11 +486,61 @@
   const menu=document.getElementById('menu');
   toggle.addEventListener('click',()=>menu.classList.toggle('open'));
   menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
-  document.querySelectorAll('[data-placeholder-link]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();alert('Добавьте ссылку на Telegram Ксении Максимовны.');}));
-  document.querySelectorAll('.js-demo-form').forEach(form=>form.addEventListener('submit',e=>{
+
+  const cfg=window.SITE_CONFIG||{};
+  const telegramLink=document.getElementById('telegramLink');
+  if(telegramLink && cfg.telegramUrl){
+    telegramLink.href=cfg.telegramUrl;
+    telegramLink.hidden=false;
+    telegramLink.target='_blank';
+    telegramLink.rel='noopener';
+  }
+
+  function showFormMessage(form,text,type){
+    const box=form.querySelector('.form-message');
+    if(!box) return;
+    box.textContent=text;
+    box.classList.remove('is-error','is-success');
+    box.classList.add(type==='success'?'is-success':'is-error');
+    box.style.display='block';
+  }
+
+  document.querySelectorAll('.js-live-form').forEach(form=>form.addEventListener('submit',async e=>{
     e.preventDefault();
-    form.querySelector('.form-message').style.display='block';
-    form.reset();
+    const message=form.querySelector('.form-message');
+    if(message) message.style.display='none';
+    if(!form.checkValidity()){
+      form.reportValidity();
+      return;
+    }
+    const email=(cfg.formEmail||'').trim();
+    if(!email){
+      showFormMessage(form,'Форма временно недоступна. Пожалуйста, попробуйте позже.','error');
+      return;
+    }
+    const button=form.querySelector('button[type="submit"]');
+    const original=button ? button.textContent : '';
+    if(button){button.disabled=true;button.textContent='Отправляем…';}
+    try{
+      const data=new FormData(form);
+      data.append('_subject',form.dataset.form==='waitlist'?'Новая заявка — лист ожидания курса':'Новая заявка с сайта Ксении Максимовны');
+      data.append('_template','table');
+      data.append('_captcha','false');
+      const res=await fetch('https://formsubmit.co/ajax/'+encodeURIComponent(email),{
+        method:'POST',
+        headers:{'Accept':'application/json'},
+        body:data
+      });
+      if(!res.ok) throw new Error('submit_failed');
+      const payload=await res.json();
+      if(payload.success===false) throw new Error('submit_failed');
+      showFormMessage(form,form.dataset.form==='waitlist'?'Спасибо! Заявка отправлена. Я сообщу вам о важных новостях и начале набора.':'Спасибо! Заявка отправлена. Я свяжусь с вами по указанному контакту.','success');
+      form.reset();
+    }catch(err){
+      showFormMessage(form,'Не удалось отправить заявку. Пожалуйста, попробуйте ещё раз чуть позже.','error');
+    }finally{
+      if(button){button.disabled=false;button.textContent=original;}
+    }
   }));
 </script>
 </body>
