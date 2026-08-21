@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Ксения Максимовна — преподаватель и методист китайского языка для детей</title>
-<meta content="Обучение китайскому языку детей от 4 лет, подготовка к YCT и HSK, очные занятия в Пушкино и Щёлково, онлайн-обучение и новый курс по методу Валерии Мещеряковой." name="description"/>
+<meta content="Обучение китайскому языку детей от 4 лет, подготовка к YCT и HSK, очные занятия в Пушкино, онлайн-обучение и новый курс по методу Валерии Мещеряковой." name="description"/>
 <meta content="#b51f2a" name="theme-color"/>
 <meta content="Ксения Максимовна — китайский язык для детей" property="og:title"/>
 <meta content="От первых слов через игру и живое общение — до уверенной сдачи YCT и HSK." property="og:description"/>
@@ -121,9 +121,9 @@
     .about-photo img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover}
     .about-visual .quote{min-height:auto}
 
-    .project-photo{margin-top:24px;height:250px;border:1px solid var(--line);overflow:hidden;position:relative;background:#f5eee5}
+    .project-photo{margin:24px 0 0;height:300px;border:1px solid var(--line);overflow:hidden;position:relative;background:#f5eee5}
     .project-photo img{width:100%;height:100%;object-fit:cover}
-    .project-photo span{position:absolute;left:12px;bottom:12px;background:rgba(255,253,248,.92);border:1px solid rgba(181,31,42,.2);padding:7px 10px;font-family:var(--serif);font-size:12px;color:var(--muted)}
+    .project-photo figcaption{position:absolute;left:12px;bottom:12px;background:rgba(255,253,248,.94);border:1px solid rgba(181,31,42,.2);padding:7px 10px;font-family:var(--serif);font-size:12px;color:var(--muted)}
 
     .certificate-gallery{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:0}
     .certificate-gallery figure{margin:0;border:1px solid var(--line);background:#fff;padding:10px}
@@ -188,7 +188,10 @@
     .formats{background:var(--paper)}
     .format-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:34px}
     .format{display:flex;flex-direction:column;min-height:300px;padding:24px 20px;border:1px solid var(--line);background:rgba(255,255,255,.82);position:relative}
-    .format::before{content:"";width:46px;height:46px;margin-bottom:22px;background:radial-gradient(circle,var(--red) 0 3px,transparent 4px),linear-gradient(45deg,transparent 47%,var(--red) 48% 52%,transparent 53%),linear-gradient(-45deg,transparent 47%,var(--red) 48% 52%,transparent 53%);opacity:.72}
+    .format::before{content:"01";width:42px;height:42px;margin-bottom:22px;border:1px solid var(--red);display:grid;place-items:center;color:var(--red);font-family:var(--serif);font-size:13px;font-weight:700;letter-spacing:.06em;background:rgba(255,253,248,.8);box-shadow:inset 0 0 0 4px rgba(181,31,42,.035)}
+    .format:nth-child(2)::before{content:"02"}
+    .format:nth-child(3)::before{content:"03"}
+    .format:nth-child(4)::before{content:"04"}
     .format .tag{align-self:flex-start;font-family:var(--serif);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--red);background:transparent;padding:0 0 5px;border-bottom:1px solid var(--red);margin-bottom:15px}
     .format p{font-size:13px;color:var(--muted)}
     .format .btn{margin-top:auto;align-self:flex-start;padding-inline:17px}
@@ -281,7 +284,7 @@
     .form-message.is-success{display:block;border-color:#b8c9b5;background:#f4f8f2;color:#315139}
     .btn[disabled]{opacity:.65;cursor:wait;transform:none!important;box-shadow:none!important}
 </style>
-<script src="assets/site-config.js"></script></head>
+</head>
 <body>
 <header>
 <div class="container nav">
@@ -361,7 +364,7 @@
 <div>
 <div class="eyebrow">Новый проект</div>
 <h2>Создаём новый курс китайского языка для детей</h2>
-<p class="lead">На рынке пока нет полноценного детского курса китайского языка, построенного на методе естественного освоения речи. Я увидела эту свободную нишу и предложила Валерии Мещеряковой создать такой курс вместе.</p>
+<p class="lead">Сейчас я вместе с Валерией Мещеряковой разрабатываю то, чего пока нет на рынке: полноценный детский курс китайского языка, построенный на принципах естественного освоения речи.</p>
 <p>Сейчас мы адаптируем принципы её методики для особенностей китайского языка: тонов, фонетики, иероглифики и другой языковой логики.</p>
 <div class="project-list">
 <div class="project-item"><span>1</span><span>Формируем концепцию курса</span></div>
@@ -369,19 +372,24 @@
 <div class="project-item"><span>3</span><span>Апробируем решения с детьми</span></div>
 <div class="project-item"><span>4</span><span>Строим путь от понимания речи к самостоятельному говорению</span></div>
 </div>
-<div class="project-photo"><img alt="Работа над новым курсом китайского языка" src="assets/project.jpg"/></div>
+<figure class="project-photo"><img alt="Ксения Максимовна и Валерия Мещерякова" src="assets/meshcheryakova.jpg"/><figcaption>Ксения Максимовна и Валерия Мещерякова</figcaption></figure>
 </div>
 <div class="waitlist">
 <div class="eyebrow">Лист ожидания</div>
 <h3>Получать важные новости о курсе</h3>
 <p>Оставьте контакт — сообщим о важных этапах и начале набора.</p>
-<form class="js-live-form" data-form="waitlist" novalidate=""><input aria-hidden="true" autocomplete="off" class="hp-field" name="_honey" tabindex="-1" type="text"/>
+<form action="https://formsubmit.co/mandarinka.chinese88@gmail.com" class="js-live-form" data-form="waitlist" method="POST">
+<input aria-hidden="true" autocomplete="off" class="hp-field" name="_honey" tabindex="-1" type="text"/>
+<input name="_subject" type="hidden" value="Новая заявка — лист ожидания курса"/>
+<input name="_template" type="hidden" value="table"/>
+<input class="js-next-url" name="_next" type="hidden" value=""/>
+<input class="js-page-url" name="_url" type="hidden" value=""/>
 <div><label for="w-name">Имя</label><input autocomplete="name" id="w-name" name="name" required=""/></div>
 <div><label for="w-role">Кто вы?</label><select id="w-role" name="role" required=""><option value="">Выберите</option><option>Родитель</option><option>Преподаватель</option><option>Руководитель школы</option><option>Методист</option><option>Другое</option></select></div>
-<div><label for="w-contact">Telegram, телефон или e-mail</label><input autocomplete="email" id="w-contact" name="contact" placeholder="Как с вами связаться" required=""/></div>
-<label class="checkbox"><input required="" type="checkbox"/><span>Согласен(а) на обработку персональных данных и ознакомлен(а) с <a href="privacy.html">политикой конфиденциальности</a>.</span></label>
+<div><label for="w-contact">Телефон или e-mail</label><input id="w-contact" name="contact" placeholder="+7... или name@example.com" required=""/></div>
+<label class="checkbox"><input name="Согласие на обработку персональных данных" required="" type="checkbox" value="Да"/><span>Согласен(а) на обработку персональных данных и ознакомлен(а) с <a href="privacy.html">политикой конфиденциальности</a>.</span></label>
 <button class="btn btn-primary" type="submit">Следить за развитием курса</button>
-<div class="form-message" role="status">Спасибо! Заявка отправлена. Я сообщу вам о важных новостях и начале набора.</div>
+<div class="form-message" role="status"></div>
 </form>
 </div>
 </div>
@@ -443,7 +451,7 @@
 <div class="eyebrow">Форматы обучения</div>
 <h2>Выберите подходящий формат</h2>
 <div class="format-grid">
-<article class="format"><span class="tag">Очно</span><h3>Группы в ABC Club</h3><p>Обучение детей от 4 лет в Пушкино и Щёлково.</p><a class="btn btn-secondary" href="#contact">Узнать о группах</a></article>
+<article class="format"><span class="tag">Очно</span><h3>Группы в ABC Club</h3><p>Обучение детей от 4 лет в Пушкино.</p><a class="btn btn-secondary" href="#contact">Узнать о группах</a></article>
 <article class="format"><span class="tag">Персонально</span><h3>Индивидуальные занятия</h3><p>Программа с учётом возраста, уровня и целей ребёнка.</p><a class="btn btn-secondary" href="#contact">Написать Ксении</a></article>
 <article class="format"><span class="tag">Онлайн</span><h3>Онлайн-занятия</h3><p>Китайский язык из любого города — в удобном дистанционном формате.</p><a class="btn btn-secondary" href="#contact">Узнать подробнее</a></article>
 <article class="format"><span class="tag">Скоро</span><h3>Новый курс</h3><p>Лист ожидания курса, создаваемого совместно с Валерией Мещеряковой.</p><a class="btn btn-primary" href="#course">Вступить в лист ожидания</a></article>
@@ -456,23 +464,25 @@
 <div class="contact-card">
 <div class="eyebrow" style="color:#f0d9c5">Контакты</div>
 <h2>Давайте знакомиться</h2>
-<p>Если вы хотите подобрать обучение для ребёнка, узнать о новом курсе или обсудить профессиональное сотрудничество, напишите мне или оставьте заявку.</p>
-<div class="contact-links">
-<a hidden="" href="#" id="telegramLink">Написать в Telegram →</a>
-<span>Пушкино · Щёлково · онлайн</span>
-</div>
+<p>Если вы хотите подобрать обучение для ребёнка, узнать о новом курсе или обсудить профессиональное сотрудничество, оставьте заявку — я свяжусь с вами по указанному контакту.</p>
+<div class="contact-links"><span>Пушкино · онлайн</span></div>
 </div>
 <div class="card">
-<form class="js-live-form" data-form="contact" novalidate=""><input aria-hidden="true" autocomplete="off" class="hp-field" name="_honey" tabindex="-1" type="text"/>
+<form action="https://formsubmit.co/mandarinka.chinese88@gmail.com" class="js-live-form" data-form="contact" method="POST">
+<input aria-hidden="true" autocomplete="off" class="hp-field" name="_honey" tabindex="-1" type="text"/>
+<input name="_subject" type="hidden" value="Новая заявка с сайта Ксении Максимовны"/>
+<input name="_template" type="hidden" value="table"/>
+<input class="js-next-url" name="_next" type="hidden" value=""/>
+<input class="js-page-url" name="_url" type="hidden" value=""/>
 <div><label for="c-name">Имя</label><input autocomplete="name" id="c-name" name="name" required=""/></div>
 <div><label for="c-role">Кто вы?</label><select id="c-role" name="role" required=""><option value="">Выберите</option><option>Родитель</option><option>Преподаватель</option><option>Партнёр</option><option>Другое</option></select></div>
 <div><label for="c-age">Возраст ребёнка</label><input id="c-age" name="age" placeholder="Если обращаетесь как родитель"/></div>
 <div><label for="c-format">Интересующий формат</label><select id="c-format" name="format"><option>Группа в ABC Club</option><option>Индивидуальные занятия</option><option>Онлайн-занятия</option><option>Новый курс</option><option>Сотрудничество</option></select></div>
-<div><label for="c-contact">Telegram или телефон</label><input id="c-contact" name="contact" placeholder="@username или +7..." required=""/></div>
+<div><label for="c-contact">Телефон или e-mail</label><input id="c-contact" name="contact" placeholder="+7... или name@example.com" required=""/></div>
 <div><label for="c-comment">Комментарий</label><textarea id="c-comment" name="comment" placeholder="Коротко расскажите, чем могу помочь"></textarea></div>
-<label class="checkbox"><input required="" type="checkbox"/><span>Согласен(а) на обработку персональных данных и ознакомлен(а) с <a href="privacy.html">политикой конфиденциальности</a>.</span></label>
+<label class="checkbox"><input name="Согласие на обработку персональных данных" required="" type="checkbox" value="Да"/><span>Согласен(а) на обработку персональных данных и ознакомлен(а) с <a href="privacy.html">политикой конфиденциальности</a>.</span></label>
 <button class="btn btn-primary" type="submit">Отправить заявку</button>
-<div class="form-message" role="status">Спасибо! Заявка отправлена. Я свяжусь с вами по указанному контакту.</div>
+<div class="form-message" role="status"></div>
 </form>
 </div>
 </div>
@@ -487,61 +497,24 @@
   toggle.addEventListener('click',()=>menu.classList.toggle('open'));
   menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
 
-  const cfg=window.SITE_CONFIG||{};
-  const telegramLink=document.getElementById('telegramLink');
-  if(telegramLink && cfg.telegramUrl){
-    telegramLink.href=cfg.telegramUrl;
-    telegramLink.hidden=false;
-    telegramLink.target='_blank';
-    telegramLink.rel='noopener';
-  }
+  // Формы отправляются через FormSubmit прямо на почту Ксении.
+  // Регистрация не нужна: первая отправка вызовет письмо для подтверждения адреса.
+  const forms=document.querySelectorAll('.js-live-form');
 
-  function showFormMessage(form,text,type){
-    const box=form.querySelector('.form-message');
-    if(!box) return;
-    box.textContent=text;
-    box.classList.remove('is-error','is-success');
-    box.classList.add(type==='success'?'is-success':'is-error');
-    box.style.display='block';
-  }
+  forms.forEach(form=>{
+    const next=form.querySelector('.js-next-url');
+    const page=form.querySelector('.js-page-url');
+    if(next) next.value=new URL('thanks.html', window.location.href).href;
+    if(page) page.value=window.location.href;
 
-  document.querySelectorAll('.js-live-form').forEach(form=>form.addEventListener('submit',async e=>{
-    e.preventDefault();
-    const message=form.querySelector('.form-message');
-    if(message) message.style.display='none';
-    if(!form.checkValidity()){
-      form.reportValidity();
-      return;
-    }
-    const email=(cfg.formEmail||'').trim();
-    if(!email){
-      showFormMessage(form,'Форма временно недоступна. Пожалуйста, попробуйте позже.','error');
-      return;
-    }
-    const button=form.querySelector('button[type="submit"]');
-    const original=button ? button.textContent : '';
-    if(button){button.disabled=true;button.textContent='Отправляем…';}
-    try{
-      const data=new FormData(form);
-      data.append('_subject',form.dataset.form==='waitlist'?'Новая заявка — лист ожидания курса':'Новая заявка с сайта Ксении Максимовны');
-      data.append('_template','table');
-      data.append('_captcha','false');
-      const res=await fetch('https://formsubmit.co/ajax/'+encodeURIComponent(email),{
-        method:'POST',
-        headers:{'Accept':'application/json'},
-        body:data
-      });
-      if(!res.ok) throw new Error('submit_failed');
-      const payload=await res.json();
-      if(payload.success===false) throw new Error('submit_failed');
-      showFormMessage(form,form.dataset.form==='waitlist'?'Спасибо! Заявка отправлена. Я сообщу вам о важных новостях и начале набора.':'Спасибо! Заявка отправлена. Я свяжусь с вами по указанному контакту.','success');
-      form.reset();
-    }catch(err){
-      showFormMessage(form,'Не удалось отправить заявку. Пожалуйста, попробуйте ещё раз чуть позже.','error');
-    }finally{
-      if(button){button.disabled=false;button.textContent=original;}
-    }
-  }));
+    form.addEventListener('submit',()=>{
+      const button=form.querySelector('button[type="submit"]');
+      if(button){
+        button.disabled=true;
+        button.textContent='Отправляем…';
+      }
+    });
+  });
 </script>
 </body>
 </html>
