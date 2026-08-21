@@ -1,4 +1,4 @@
 window.SITE_CONFIG = {
-  formEmail: "",
-  telegramUrl: ""
+  formEmail: "molokanova0306@yandex.ru",
+  telegramUrl: "t.me/KseniyaChina1"
 };
