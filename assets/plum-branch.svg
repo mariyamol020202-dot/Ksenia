@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 280">
+  <g fill="none" stroke-linecap="round">
+    <path d="M-15 215C100 184 183 142 272 71C335 20 406 11 497 30" stroke="#26211f" stroke-width="10"/>
+    <path d="M104 179c18-54 25-98 12-143M214 119c35-34 72-56 121-69M321 44c32 9 68 32 91 61M170 144c-8-31-3-63 17-94" stroke="#362a27" stroke-width="5"/>
+  </g>
+  <g fill="#b51f2a" stroke="#8d1720" stroke-width="1.2">
+    <g transform="translate(82 177)"><circle r="11"/><circle cx="16" cy="-4" r="10"/><circle cx="10" cy="12" r="10"/><circle cx="-8" cy="10" r="10"/><circle cx="-10" cy="-7" r="10"/><circle fill="#e0a95a" r="3"/></g>
+    <g transform="translate(123 110) scale(.8)"><circle r="11"/><circle cx="16" cy="-4" r="10"/><circle cx="10" cy="12" r="10"/><circle cx="-8" cy="10" r="10"/><circle cx="-10" cy="-7" r="10"/><circle fill="#e0a95a" r="3"/></g>
+    <g transform="translate(188 145) scale(.9)"><circle r="11"/><circle cx="16" cy="-4" r="10"/><circle cx="10" cy="12" r="10"/><circle cx="-8" cy="10" r="10"/><circle cx="-10" cy="-7" r="10"/><circle fill="#e0a95a" r="3"/></g>
+    <g transform="translate(220 95) scale(.75)"><circle r="11"/><circle cx="16" cy="-4" r="10"/><circle cx="10" cy="12" r="10"/><circle cx="-8" cy="10" r="10"/><circle cx="-10" cy="-7" r="10"/><circle fill="#e0a95a" r="3"/></g>
+    <g transform="translate(290 55) scale(1.05)"><circle r="11"/><circle cx="16" cy="-4" r="10"/><circle cx="10" cy="12" r="10"/><circle cx="-8" cy="10" r="10"/><circle cx="-10" cy="-7" r="10"/><circle fill="#e0a95a" r="3"/></g>
+    <g transform="translate(366 43) scale(.8)"><circle r="11"/><circle cx="16" cy="-4" r="10"/><circle cx="10" cy="12" r="10"/><circle cx="-8" cy="10" r="10"/><circle cx="-10" cy="-7" r="10"/><circle fill="#e0a95a" r="3"/></g>
+    <g transform="translate(419 88) scale(.7)"><circle r="11"/><circle cx="16" cy="-4" r="10"/><circle cx="10" cy="12" r="10"/><circle cx="-8" cy="10" r="10"/><circle cx="-10" cy="-7" r="10"/><circle fill="#e0a95a" r="3"/></g>
+  </g>
+  <g fill="#c8323a" opacity=".75"><path d="M492 70c18 4 20 14 6 23-13-2-19-10-6-23Z"/><path d="M535 113c13 3 15 11 5 17-10-1-15-7-5-17Z"/><path d="M438 139c16 3 19 12 6 20-11-1-18-9-6-20Z"/></g>
+</svg>
